@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +32,7 @@
 
 
     /* ==============================
-       NAVIGATION BAR
+       NAVIGATION
     ============================== */
 
     nav {
@@ -120,6 +119,24 @@
           transparent 35%
         ),
         #08080d;
+    }
+
+    /* PROFILE PHOTO */
+
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+
+      object-fit: cover;
+
+      border-radius: 50%;
+
+      border: 3px solid #765bc0;
+
+      box-shadow:
+        0 0 35px rgba(118, 91, 192, 0.45);
+
+      margin-bottom: 25px;
     }
 
     .hero h1 {
@@ -367,6 +384,11 @@
       section {
         padding: 80px 6%;
       }
+
+      .profile-pic {
+        width: 150px;
+        height: 150px;
+      }
     }
 
 
@@ -378,6 +400,11 @@
 
       .hero h1 {
         letter-spacing: 4px;
+      }
+
+      .profile-pic {
+        width: 140px;
+        height: 140px;
       }
     }
 
@@ -434,18 +461,30 @@
 
     <div>
 
+      <!-- PROFILE PHOTO -->
+
+      <img
+        src="meee.jpg"
+        alt="Sawom"
+        class="profile-pic"
+      >
+
+
       <h1>
         SAWOM
       </h1>
+
 
       <h2>
         Coder • Designer • Freelancer • Guitarist
       </h2>
 
+
       <p>
         I create digital experiences, design creative visuals,
         build ideas into projects, and enjoy making music along the way.
       </p>
+
 
       <div class="buttons">
 
@@ -754,7 +793,14 @@
       <!-- EMAIL -->
 
       <a href="mailto:raiyansarowar.bb@gmail.com">
-        Email
+        📧 Email
+      </a>
+
+
+      <!-- PHONE -->
+
+      <a href="tel:+8801749706688">
+        📞 01749706688
       </a>
 
 
@@ -764,7 +810,7 @@
         href="https://www.instagram.com/rai_yan102/"
         target="_blank"
       >
-        Instagram
+        📸 Instagram
       </a>
 
 
@@ -774,7 +820,7 @@
         href="https://www.facebook.com/share/1BsvvA7hkW/?mibextid=wwXIfr"
         target="_blank"
       >
-        Facebook
+        🔵 Facebook
       </a>
 
 
@@ -784,7 +830,7 @@
         href="https://github.com/rssawom"
         target="_blank"
       >
-        GitHub
+        💻 GitHub
       </a>
 
 
@@ -807,4 +853,3 @@
 
 </body>
 </html>
-```
