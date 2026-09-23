@@ -1,13 +1,16 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="-81mPIdx2aq1xw0OfufkFfj2ii7PXvyZPi_IKi4t34E"> 
+
+  <meta name="google-site-verification" content="-81mPIdx2aq1xw0OfufkFfj2ii7PXvyZPi_IKi4t34E">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Sawom — Portfolio</title>
 
   <style>
+
     /* ==============================
        BASIC SETTINGS
     ============================== */
@@ -122,7 +125,6 @@
         #08080d;
     }
 
-    /* PROFILE PHOTO */
 
     .profile-pic {
       width: 180px;
@@ -292,12 +294,10 @@
 
 
     /* ==============================
-       GUITAR SECTION
+       BEYOND THE CODE
     ============================== */
 
-    .guitar {
-      text-align: center;
-
+    .beyond {
       background:
         linear-gradient(
           180deg,
@@ -306,9 +306,56 @@
         );
     }
 
-    .guitar .big {
-      font-size: 80px;
-      margin-bottom: 20px;
+    .beyond-container {
+      max-width: 1100px;
+      margin: auto;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      gap: 22px;
+    }
+
+    .beyond-card {
+      background: rgba(16, 16, 23, 0.9);
+
+      border: 1px solid #242432;
+      border-radius: 20px;
+
+      padding: 32px;
+
+      transition: 0.3s;
+    }
+
+    .beyond-card:hover {
+      transform: translateY(-7px);
+      border-color: #765bc0;
+
+      box-shadow:
+        0 10px 35px rgba(118, 91, 192, 0.12);
+    }
+
+    .beyond-icon {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .beyond-card span {
+      color: #8e72d1;
+      font-size: 12px;
+
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+
+    .beyond-card h3 {
+      font-size: 24px;
+      margin: 8px 0 12px;
+    }
+
+    .beyond-card p {
+      color: #8d8d99;
+      font-size: 15px;
     }
 
 
@@ -368,7 +415,7 @@
        MOBILE RESPONSIVE
     ============================== */
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1050px) {
 
       .skills {
         grid-template-columns: repeat(3, 1fr);
@@ -391,6 +438,10 @@
         grid-template-columns: 1fr;
       }
 
+      .beyond-container {
+        grid-template-columns: 1fr;
+      }
+
       section {
         padding: 80px 6%;
       }
@@ -399,6 +450,7 @@
         width: 150px;
         height: 150px;
       }
+
     }
 
 
@@ -416,9 +468,15 @@
         width: 140px;
         height: 140px;
       }
+
+      .beyond-card {
+        padding: 25px;
+      }
+
     }
 
   </style>
+
 </head>
 
 
@@ -470,8 +528,6 @@
   <section class="hero" id="home">
 
     <div>
-
-      <!-- PROFILE PHOTO -->
 
       <img
         src="meee.jpg"
@@ -543,8 +599,8 @@
         I'm interested in coding, graphic design,
         freelancing, cybersecurity and creative technology.
 
-        I enjoy turning ideas into useful digital projects,
-        learning about cybersecurity and exploring new creative skills.
+        I enjoy turning ideas into useful digital projects
+        and exploring new creative skills.
 
       </p>
 
@@ -663,8 +719,6 @@
 
 
 
-      <!-- NEW CYBERSECURITY IDENTITY -->
-
       <div class="card">
 
         <div class="icon">
@@ -774,25 +828,157 @@
 
 
   <!-- ==============================
-       GUITAR
+       BEYOND THE CODE
   ============================== -->
 
-  <section class="guitar">
+  <section class="beyond">
 
     <div class="section-title">
-
-      <div class="big">
-        🎸
-      </div>
 
       <h2>
         Beyond The Code
       </h2>
 
       <p>
-        Sometimes I put the keyboard aside
-        and pick up a guitar.
+        Technology, creativity and passion — all in one place.
       </p>
+
+    </div>
+
+
+    <div class="beyond-container">
+
+
+      <!-- PROGRAMMER -->
+
+      <div class="beyond-card">
+
+        <div class="beyond-icon">
+          💻
+        </div>
+
+        <span>
+          PROGRAMMING
+        </span>
+
+        <h3>
+          Programmer
+        </h3>
+
+        <p>
+          I enjoy writing code, building websites and turning
+          ideas into functional digital projects. I like solving
+          problems through programming and continuously learning
+          new technologies.
+        </p>
+
+      </div>
+
+
+
+      <!-- ETHICAL HACKER -->
+
+      <div class="beyond-card">
+
+        <div class="beyond-icon">
+          🛡️
+        </div>
+
+        <span>
+          CYBERSECURITY
+        </span>
+
+        <h3>
+          Ethical Hacker
+        </h3>
+
+        <p>
+          I'm interested in cybersecurity and ethical hacking.
+          I explore web security, networking, vulnerabilities
+          and defensive techniques with the goal of understanding
+          how digital systems can be protected.
+        </p>
+
+      </div>
+
+
+
+      <!-- DESIGNER -->
+
+      <div class="beyond-card">
+
+        <div class="beyond-icon">
+          🎨
+        </div>
+
+        <span>
+          CREATIVE DESIGN
+        </span>
+
+        <h3>
+          Graphic Designer
+        </h3>
+
+        <p>
+          I create logos, posters, branding concepts and digital
+          visuals. I enjoy combining typography, composition and
+          creative ideas to turn concepts into attractive designs.
+        </p>
+
+      </div>
+
+
+
+      <!-- FREELANCER -->
+
+      <div class="beyond-card">
+
+        <div class="beyond-icon">
+          ⚡
+        </div>
+
+        <span>
+          FREELANCING
+        </span>
+
+        <h3>
+          Freelancer
+        </h3>
+
+        <p>
+          I work on creative and digital projects and enjoy
+          helping people turn their ideas into real results.
+          I focus on communication, creativity and attention to detail.
+        </p>
+
+      </div>
+
+
+
+      <!-- GUITARIST -->
+
+      <div class="beyond-card">
+
+        <div class="beyond-icon">
+          🎸
+        </div>
+
+        <span>
+          MUSIC
+        </span>
+
+        <h3>
+          Guitarist
+        </h3>
+
+        <p>
+          Music is another part of my creativity. I enjoy playing
+          guitar, exploring sounds and taking a break from technology
+          through music.
+        </p>
+
+      </div>
+
 
     </div>
 
@@ -822,21 +1008,15 @@
     <div class="socials">
 
 
-      <!-- EMAIL -->
-
       <a href="mailto:raiyansarowar.bb@gmail.com">
         📧 Email
       </a>
 
 
-      <!-- PHONE -->
-
       <a href="tel:+8801749706688">
         📞 01749706688
       </a>
 
-
-      <!-- INSTAGRAM -->
 
       <a
         href="https://www.instagram.com/rai_yan102/"
@@ -846,8 +1026,6 @@
       </a>
 
 
-      <!-- FACEBOOK -->
-
       <a
         href="https://www.facebook.com/share/1BsvvA7hkW/?mibextid=wwXIfr"
         target="_blank"
@@ -855,8 +1033,6 @@
         🔵 Facebook
       </a>
 
-
-      <!-- GITHUB -->
 
       <a
         href="https://github.com/rssawom"
@@ -885,3 +1061,4 @@
 
 </body>
 </html>
+```
