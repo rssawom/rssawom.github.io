@@ -1,15 +1,15 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <meta name="google-site-verification" content="-81mPIdx2aq1xw0OfufkFfj2ii7PXvyZPi_IKi4t34E">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE">
 
   <title>Sawom — Portfolio</title>
 
   <style>
-
     * {
       margin: 0;
       padding: 0;
@@ -19,14 +19,9 @@
 
     body {
       font-family: Arial, sans-serif;
-      background: #08080d;
-      color: #ffffff;
+      background: #090611;
+      color: #fff;
       line-height: 1.6;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
     }
 
     nav {
@@ -34,660 +29,353 @@
       top: 0;
       width: 100%;
       z-index: 1000;
-
-      padding: 18px 7%;
-
+      background: rgba(9, 6, 17, 0.9);
+      backdrop-filter: blur(10px);
+      padding: 18px 8%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-
-      background: rgba(8, 8, 13, 0.88);
-      backdrop-filter: blur(12px);
-
-      border-bottom: 1px solid #22222d;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
     }
 
     .logo {
-      font-size: 25px;
+      font-size: 24px;
       font-weight: bold;
-      letter-spacing: 2px;
+      color: #b77cff;
     }
 
     nav ul {
       display: flex;
       list-style: none;
-      gap: 28px;
+      gap: 25px;
     }
 
-    nav ul a {
-      color: #aaa;
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
       transition: 0.3s;
     }
 
-    nav ul a:hover {
-      color: #ffffff;
+    nav a:hover {
+      color: #b77cff;
     }
 
     section {
       padding: 100px 8%;
     }
 
-    .section-title {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-
-    .section-title h2 {
-      font-size: 38px;
-    }
-
-    .section-title p {
-      color: #888;
-      margin-top: 8px;
-    }
-
-    .hero {
+    #home {
       min-height: 100vh;
-
       display: flex;
       align-items: center;
-      justify-content: center;
-
-      text-align: center;
-      padding-top: 130px;
-
-      background:
-        radial-gradient(
-          circle at 50% 30%,
-          #30205d 0%,
-          transparent 35%
-        ),
-        #08080d;
+      justify-content: space-between;
+      gap: 50px;
     }
 
-    .profile-pic {
-      width: 180px;
-      height: 180px;
-
-      object-fit: cover;
-
-      border-radius: 50%;
-
-      border: 3px solid #765bc0;
-
-      box-shadow:
-        0 0 35px rgba(118, 91, 192, 0.45);
-
-      margin-bottom: 25px;
-    }
-
-    .hero h1 {
-      font-size: clamp(55px, 10vw, 110px);
-      letter-spacing: 8px;
-      margin-bottom: 10px;
-    }
-
-    .hero h2 {
-      font-size: clamp(20px, 3vw, 32px);
-      font-weight: normal;
-      color: #bdb8d2;
-    }
-
-    .hero p {
+    .hero-text {
       max-width: 650px;
-      margin: 25px auto;
-
-      color: #92929f;
-      font-size: 17px;
     }
 
-    .buttons {
-      margin-top: 30px;
+    .hero-text h1 {
+      font-size: clamp(55px, 10vw, 110px);
+      line-height: 0.9;
+      color: #fff;
     }
 
-    .btn {
-      display: inline-block;
-
-      padding: 13px 27px;
-      margin: 6px;
-
-      border: 1px solid #6f55b5;
-      border-radius: 30px;
-
-      transition: 0.3s;
+    .hero-text h1 span {
+      color: #a855f7;
     }
 
-    .btn:hover {
-      background: #6f55b5;
-      transform: translateY(-3px);
-    }
-
-    .about {
-      max-width: 850px;
-      margin: auto;
-
-      text-align: center;
-
-      color: #aaa;
+    .hero-text p {
+      margin-top: 25px;
+      color: #bbb;
       font-size: 18px;
     }
 
+    .hero-image {
+      width: 330px;
+      height: 330px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #8b5cf6;
+      box-shadow: 0 0 50px rgba(139,92,246,0.3);
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .section-title {
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 42px;
+      color: #fff;
+    }
+
+    .section-title p {
+      color: #999;
+    }
+
+    .about-text {
+      max-width: 850px;
+      color: #bbb;
+      font-size: 17px;
+    }
+
     .skills {
-      display: grid;
-
-      grid-template-columns: repeat(5, 1fr);
-
-      gap: 20px;
-
-      max-width: 1200px;
-      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
     }
 
-    .card {
-      background: #101017;
-
-      border: 1px solid #242432;
-      border-radius: 18px;
-
-      padding: 30px 20px;
-
-      text-align: center;
-
-      transition: 0.3s;
+    .skill {
+      padding: 12px 20px;
+      border: 1px solid #3b245d;
+      background: #120b1d;
+      border-radius: 30px;
+      color: #d7b7ff;
     }
 
-    .card:hover {
-      transform: translateY(-8px);
-      border-color: #765bc0;
-    }
-
-    .card .icon {
-      font-size: 38px;
-      margin-bottom: 15px;
-    }
-
-    .card h3 {
-      margin-bottom: 8px;
-    }
-
-    .card p {
-      color: #858592;
-      font-size: 14px;
-    }
-
-    /* ==============================
-       PROJECTS
-    ============================== */
+    /* PROJECTS */
 
     .projects {
       display: grid;
-
-      grid-template-columns: repeat(3, 1fr);
-
-      gap: 22px;
-
-      max-width: 1100px;
-      margin: auto;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
     }
 
     .project {
-      background: #101017;
-
-      padding: 28px;
-
+      background: #110a1c;
+      border: 1px solid #2d1a45;
       border-radius: 18px;
-      border: 1px solid #242432;
-
+      overflow: hidden;
       transition: 0.3s;
     }
 
     .project:hover {
-      transform: translateY(-7px);
-      border-color: #765bc0;
+      transform: translateY(-8px);
+      border-color: #8b5cf6;
+      box-shadow: 0 15px 40px rgba(139,92,246,0.15);
+    }
+
+    .project-image {
+      width: 100%;
+      height: 230px;
+      overflow: hidden;
+      background: #181022;
+    }
+
+    .project-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: 0.4s;
+    }
+
+    .project:hover .project-image img {
+      transform: scale(1.05);
+    }
+
+    .project-content {
+      padding: 22px;
     }
 
     .project span {
-      color: #8e72d1;
-      font-size: 13px;
+      color: #a855f7;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
     }
 
     .project h3 {
-      margin: 12px 0;
-      font-size: 21px;
+      margin: 8px 0;
+      font-size: 23px;
     }
 
     .project p {
-      color: #888895;
+      color: #aaa;
+      font-size: 14px;
     }
+
+    .project a {
+      display: inline-block;
+      margin-top: 15px;
+      color: #c084fc;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    /* BEYOND THE CODE */
 
     .beyond {
-      background:
-        linear-gradient(
-          180deg,
-          #08080d,
-          #120d20
-        );
-    }
-
-    .beyond-container {
-      max-width: 1100px;
-      margin: auto;
-
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-
-      gap: 22px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
     }
 
     .beyond-card {
-      background: rgba(16, 16, 23, 0.9);
-
-      border: 1px solid #242432;
-      border-radius: 20px;
-
-      padding: 32px;
-
-      transition: 0.3s;
-    }
-
-    .beyond-card:hover {
-      transform: translateY(-7px);
-      border-color: #765bc0;
-
-      box-shadow:
-        0 10px 35px rgba(118, 91, 192, 0.12);
-    }
-
-    .beyond-icon {
-      font-size: 42px;
-      margin-bottom: 15px;
-    }
-
-    .beyond-card span {
-      color: #8e72d1;
-      font-size: 12px;
-
-      letter-spacing: 2px;
-      font-weight: bold;
+      padding: 30px;
+      background: #110a1c;
+      border: 1px solid #2d1a45;
+      border-radius: 18px;
     }
 
     .beyond-card h3 {
-      font-size: 24px;
-      margin: 8px 0 12px;
+      margin-bottom: 10px;
+      color: #c084fc;
     }
 
     .beyond-card p {
-      color: #8d8d99;
-      font-size: 15px;
-    }
-
-    .contact {
-      text-align: center;
-    }
-
-    .socials {
-      margin-top: 25px;
-
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-
-      gap: 12px;
-    }
-
-    .socials a {
-      padding: 10px 20px;
-
-      border: 1px solid #292936;
-      border-radius: 25px;
-
       color: #aaa;
-
-      transition: 0.3s;
     }
 
-    .socials a:hover {
-      color: #ffffff;
-      border-color: #765bc0;
+    /* CONTACT */
+
+    .contact-box {
+      max-width: 700px;
+      padding: 35px;
+      background: #110a1c;
+      border: 1px solid #2d1a45;
+      border-radius: 20px;
+    }
+
+    .contact-box p {
+      margin: 12px 0;
+      color: #bbb;
+    }
+
+    .contact-box a {
+      color: #c084fc;
+      text-decoration: none;
     }
 
     footer {
       text-align: center;
-
       padding: 30px;
-
-      border-top: 1px solid #20202a;
-
-      color: #666;
-
-      font-size: 14px;
-    }
-
-    @media (max-width: 1050px) {
-
-      .skills {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
+      color: #777;
+      border-top: 1px solid #21132f;
     }
 
     @media (max-width: 800px) {
-
       nav ul {
         display: none;
       }
 
-      .skills {
-        grid-template-columns: repeat(2, 1fr);
+      #home {
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
       }
 
-      .projects {
-        grid-template-columns: 1fr;
+      .hero-image {
+        width: 250px;
+        height: 250px;
       }
-
-      .beyond-container {
-        grid-template-columns: 1fr;
-      }
-
-      section {
-        padding: 80px 6%;
-      }
-
-      .profile-pic {
-        width: 150px;
-        height: 150px;
-      }
-
     }
-
-    @media (max-width: 500px) {
-
-      .skills {
-        grid-template-columns: 1fr;
-      }
-
-      .hero h1 {
-        letter-spacing: 4px;
-      }
-
-      .profile-pic {
-        width: 140px;
-        height: 140px;
-      }
-
-      .beyond-card {
-        padding: 25px;
-      }
-
-    }
-
   </style>
-
 </head>
-
 
 <body>
 
-
-  <!-- ==============================
-       NAVIGATION
-  ============================== -->
+  <!-- NAVIGATION -->
 
   <nav>
-
-    <div class="logo">
-      SAWOM.
-    </div>
+    <div class="logo">SAWOM</div>
 
     <ul>
-
-      <li>
-        <a href="#home">Home</a>
-      </li>
-
-      <li>
-        <a href="#about">About</a>
-      </li>
-
-      <li>
-        <a href="#skills">Skills</a>
-      </li>
-
-      <li>
-        <a href="#projects">Projects</a>
-      </li>
-
-      <li>
-        <a href="#contact">Contact</a>
-      </li>
-
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#beyond">Beyond The Code</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-
   </nav>
 
 
-  <!-- ==============================
-       HOME
-  ============================== -->
+  <!-- HOME -->
 
-  <section class="hero" id="home">
+  <section id="home">
 
-    <div>
-
-      <img
-        src="meee.jpg"
-        alt="Sawom"
-        class="profile-pic"
-      >
-
-      <h1>
-        SAWOM
-      </h1>
-
-      <h2>
-        Coder • Designer • Freelancer • Guitarist • Ethical Hacker
-      </h2>
+    <div class="hero-text">
+      <h1>SAW<span>OM</span></h1>
 
       <p>
-        I create digital experiences, design creative visuals,
-        build ideas into projects, explore cybersecurity,
-        and enjoy making music along the way.
+        Coder • Designer • Freelancer • Guitarist • Ethical Hacker
       </p>
 
-      <div class="buttons">
+      <p>
+        I create modern digital experiences through coding,
+        graphic design and creative technology.
+      </p>
+    </div>
 
-        <a class="btn" href="#projects">
-          View My Work
-        </a>
-
-        <a class="btn" href="#contact">
-          Contact Me
-        </a>
-
-      </div>
-
+    <div class="hero-image">
+      <img src="meee.jpg" alt="Sawom">
     </div>
 
   </section>
 
 
-  <!-- ==============================
-       ABOUT
-  ============================== -->
+  <!-- ABOUT -->
 
   <section id="about">
 
     <div class="section-title">
-
-      <h2>
-        About Me
-      </h2>
-
-      <p>
-        A little about who I am
-      </p>
-
+      <h2>About Me</h2>
+      <p>A little about who I am</p>
     </div>
 
-    <div class="about">
-
+    <div class="about-text">
       <p>
-
-        Hey, I'm <strong>Sawom</strong>.
-
-        I'm interested in coding, graphic design,
-        freelancing, cybersecurity and creative technology.
-
-        I enjoy turning ideas into useful digital projects
-        and exploring new creative skills.
-
+        I'm Sawom, a student, programmer, graphic designer and freelancer
+        who enjoys building creative digital projects. I love learning
+        new technologies and turning ideas into useful and attractive
+        digital experiences.
       </p>
-
-      <br>
-
-      <p>
-
-        When I'm away from the screen,
-        you'll probably find me with a guitar. 🎸
-
-      </p>
-
     </div>
 
   </section>
 
 
-  <!-- ==============================
-       SKILLS
-  ============================== -->
+  <!-- SKILLS -->
 
   <section id="skills">
 
     <div class="section-title">
-
-      <h2>
-        What I Do
-      </h2>
-
-      <p>
-        My creative & digital skills
-      </p>
-
+      <h2>My Skills</h2>
+      <p>Things I enjoy working with</p>
     </div>
 
     <div class="skills">
-
-      <div class="card">
-
-        <div class="icon">
-          💻
-        </div>
-
-        <h3>
-          Coder
-        </h3>
-
-        <p>
-          Building websites, experimenting with technology
-          and turning ideas into digital projects.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <div class="icon">
-          🎨
-        </div>
-
-        <h3>
-          Designer
-        </h3>
-
-        <p>
-          Logo design, posters, branding and creative
-          visual design.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <div class="icon">
-          ⚡
-        </div>
-
-        <h3>
-          Freelancer
-        </h3>
-
-        <p>
-          Helping people bring their ideas to life
-          through creative digital work.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <div class="icon">
-          🎸
-        </div>
-
-        <h3>
-          Guitarist
-        </h3>
-
-        <p>
-          Music, guitar and creativity outside
-          the digital world.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <div class="icon">
-          🛡️
-        </div>
-
-        <h3>
-          Ethical Hacker
-        </h3>
-
-        <p>
-          Learning cybersecurity, ethical hacking,
-          web security and defensive security techniques.
-        </p>
-
-      </div>
-
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">Python</div>
+      <div class="skill">Graphic Design</div>
+      <div class="skill">Logo Design</div>
+      <div class="skill">Branding</div>
+      <div class="skill">UI Design</div>
+      <div class="skill">GitHub</div>
+      <div class="skill">Freelancing</div>
+      <div class="skill">Cybersecurity</div>
     </div>
 
   </section>
 
 
-  <!-- ==============================
-       PROJECTS
-       ADD NEW PROJECTS IN projectsData
-  ============================== -->
+  <!-- PROJECTS -->
 
   <section id="projects">
 
     <div class="section-title">
-
-      <h2>
-        My Projects
-      </h2>
-
-      <p>
-        Some things I've worked on
-      </p>
-
+      <h2>My Projects</h2>
+      <p>Some things I've worked on</p>
     </div>
 
     <div class="projects" id="project-list"></div>
@@ -695,151 +383,39 @@
   </section>
 
 
-  <!-- ==============================
-       BEYOND THE CODE
-  ============================== -->
+  <!-- BEYOND THE CODE -->
 
-  <section class="beyond">
+  <section id="beyond">
 
     <div class="section-title">
-
-      <h2>
-        Beyond The Code
-      </h2>
-
-      <p>
-        Technology, creativity and passion — all in one place.
-      </p>
-
+      <h2>Beyond The Code</h2>
+      <p>Things I enjoy outside programming</p>
     </div>
 
-    <div class="beyond-container">
-
-
-      <!-- PROGRAMMER -->
+    <div class="beyond">
 
       <div class="beyond-card">
-
-        <div class="beyond-icon">
-          💻
-        </div>
-
-        <span>
-          PROGRAMMING
-        </span>
-
-        <h3>
-          Programmer
-        </h3>
-
+        <h3>🎸 Guitar</h3>
         <p>
-          I enjoy writing code, building websites and turning
-          ideas into functional digital projects. I like solving
-          problems through programming and continuously learning
+          Music and guitar are some of the things I enjoy
+          outside technology.
+        </p>
+      </div>
+
+      <div class="beyond-card">
+        <h3>🎨 Design</h3>
+        <p>
+          I enjoy creating logos, posters, branding and
+          modern visual concepts.
+        </p>
+      </div>
+
+      <div class="beyond-card">
+        <h3>💻 Technology</h3>
+        <p>
+          I enjoy exploring programming, cybersecurity and
           new technologies.
         </p>
-
-      </div>
-
-
-      <!-- ETHICAL HACKER -->
-
-      <div class="beyond-card">
-
-        <div class="beyond-icon">
-          🛡️
-        </div>
-
-        <span>
-          CYBERSECURITY
-        </span>
-
-        <h3>
-          Ethical Hacker
-        </h3>
-
-        <p>
-          I'm interested in cybersecurity and ethical hacking.
-          I explore web security, networking, vulnerabilities
-          and defensive techniques with the goal of understanding
-          how digital systems can be protected.
-        </p>
-
-      </div>
-
-
-      <!-- DESIGNER -->
-
-      <div class="beyond-card">
-
-        <div class="beyond-icon">
-          🎨
-        </div>
-
-        <span>
-          CREATIVE DESIGN
-        </span>
-
-        <h3>
-          Graphic Designer
-        </h3>
-
-        <p>
-          I create logos, posters, branding concepts and digital
-          visuals. I enjoy combining typography, composition and
-          creative ideas to turn concepts into attractive designs.
-        </p>
-
-      </div>
-
-
-      <!-- FREELANCER -->
-
-      <div class="beyond-card">
-
-        <div class="beyond-icon">
-          ⚡
-        </div>
-
-        <span>
-          FREELANCING
-        </span>
-
-        <h3>
-          Freelancer
-        </h3>
-
-        <p>
-          I work on creative and digital projects and enjoy
-          helping people turn their ideas into real results.
-          I focus on communication, creativity and attention to detail.
-        </p>
-
-      </div>
-
-
-      <!-- GUITARIST -->
-
-      <div class="beyond-card">
-
-        <div class="beyond-icon">
-          🎸
-        </div>
-
-        <span>
-          MUSIC
-        </span>
-
-        <h3>
-          Guitarist
-        </h3>
-
-        <p>
-          Music is another part of my creativity. I enjoy playing
-          guitar, exploring sounds and taking a break from technology
-          through music.
-        </p>
-
       </div>
 
     </div>
@@ -847,75 +423,64 @@
   </section>
 
 
-  <!-- ==============================
-       CONTACT
-  ============================== -->
+  <!-- CONTACT -->
 
-  <section class="contact" id="contact">
+  <section id="contact">
 
     <div class="section-title">
+      <h2>Contact Me</h2>
+      <p>Let's connect</p>
+    </div>
 
-      <h2>
-        Let's Connect
-      </h2>
+    <div class="contact-box">
 
       <p>
-        Have an idea or want to work together?
+        📧 Email:
+        <a href="mailto:raiyansarowar.bb@gmail.com">
+          raiyansarowar.bb@gmail.com
+        </a>
+      </p>
+
+      <p>
+        📱 Phone:
+        <a href="tel:01749706688">
+          01749706688
+        </a>
+      </p>
+
+      <p>
+        📸 Instagram:
+        <a href="https://www.instagram.com/rai_yan102/" target="_blank">
+          @rai_yan102
+        </a>
+      </p>
+
+      <p>
+        💻 GitHub:
+        <a href="https://github.com/rssawom" target="_blank">
+          github.com/rssawom
+        </a>
+      </p>
+
+      <p>
+        Facebook:
+        <a href="https://www.facebook.com/share/1BsvvA7hkW/?mibextid=wwXIfr"
+           target="_blank">
+          Facebook
+        </a>
       </p>
 
     </div>
 
-    <div class="socials">
-
-      <a href="mailto:raiyansarowar.bb@gmail.com">
-        📧 Email
-      </a>
-
-      <a href="tel:+8801749706688">
-        📞 01749706688
-      </a>
-
-      <a
-        href="https://www.instagram.com/rai_yan102/"
-        target="_blank"
-      >
-        📸 Instagram
-      </a>
-
-      <a
-        href="https://www.facebook.com/share/1BsvvA7hkW/?mibextid=wwXIfr"
-        target="_blank"
-      >
-        🔵 Facebook
-      </a>
-
-      <a
-        href="https://github.com/rssawom"
-        target="_blank"
-      >
-        💻 GitHub
-      </a>
-
-    </div>
-
   </section>
 
 
-  <!-- ==============================
-       FOOTER
-  ============================== -->
-
   <footer>
-
     © 2026 Sawom. All rights reserved.
-
   </footer>
 
 
-  <!-- ==============================
-       PROJECT DATA
-       ADD NEW PROJECTS HERE
-  ============================== -->
+  <!-- PROJECT DATA -->
 
   <script>
 
@@ -925,42 +490,48 @@
         category: "WEB PROJECT",
         title: "Volunteer Rating System",
         description:
-          "A web-based volunteer rating platform created for event management and evaluation."
+          "A web-based volunteer rating platform created for event management and evaluation.",
+        image: "images/volunteer-rating.png"
       },
 
       {
         category: "ICT EVENT",
         title: "BBCC ICT Fest 2026",
         description:
-          "Creative and technical work for a student-focused ICT event featuring competitions and activities."
+          "Creative and technical work for a student-focused ICT event featuring competitions and activities.",
+        image: "images/bbcc-ict-fest.png"
       },
 
       {
         category: "DESIGN",
         title: "Graphic Design",
         description:
-          "Logos, posters, branding concepts and other creative visual projects."
+          "Logos, posters, branding concepts and other creative visual projects.",
+        image: "images/graphic-design.png"
       },
 
       {
         category: "LOGO DESIGN",
         title: "G&C Company Logo",
         description:
-          "A professional logo design created for G&C Company, focusing on a clean, modern and distinctive brand identity."
+          "A professional logo design created for G&C Company, focusing on a clean, modern and distinctive brand identity.",
+        image: "images/gc-company-logo.png"
       },
 
       {
         category: "BRANDING",
         title: "Engineering Company Business Card",
         description:
-          "A professional business card designed for an engineering company with a clean, modern and corporate visual identity."
+          "A professional business card designed for an engineering company with a clean, modern and corporate visual identity.",
+        image: "images/engineering-business-card.png"
       },
 
       {
         category: "FOOD & BRANDING",
         title: "Food Cart Design",
         description:
-          "A creative food cart design featuring an eye-catching visual identity and an engaging layout for a food business."
+          "A creative food cart design featuring an eye-catching visual identity and an engaging layout for a food business.",
+        image: "images/food-cart-design.png"
       }
 
     ];
@@ -977,17 +548,25 @@
 
       projectCard.innerHTML = `
 
-        <span>
-          ${project.category}
-        </span>
+        <div class="project-image">
 
-        <h3>
-          ${project.title}
-        </h3>
+          <img
+            src="${project.image}"
+            alt="${project.title}"
+            onerror="this.src='https://via.placeholder.com/800x500/181022/c084fc?text=Project+Image'"
+          >
 
-        <p>
-          ${project.description}
-        </p>
+        </div>
+
+        <div class="project-content">
+
+          <span>${project.category}</span>
+
+          <h3>${project.title}</h3>
+
+          <p>${project.description}</p>
+
+        </div>
 
       `;
 
@@ -997,6 +576,6 @@
 
   </script>
 
-
 </body>
 </html>
+```
