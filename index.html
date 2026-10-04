@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,10 +9,6 @@
   <title>Sawom — Portfolio</title>
 
   <style>
-
-    /* ==============================
-       BASIC SETTINGS
-    ============================== */
 
     * {
       margin: 0;
@@ -33,11 +28,6 @@
       color: inherit;
       text-decoration: none;
     }
-
-
-    /* ==============================
-       NAVIGATION
-    ============================== */
 
     nav {
       position: fixed;
@@ -78,11 +68,6 @@
       color: #ffffff;
     }
 
-
-    /* ==============================
-       GENERAL SECTION
-    ============================== */
-
     section {
       padding: 100px 8%;
     }
@@ -100,11 +85,6 @@
       color: #888;
       margin-top: 8px;
     }
-
-
-    /* ==============================
-       HERO / HOME
-    ============================== */
 
     .hero {
       min-height: 100vh;
@@ -124,7 +104,6 @@
         ),
         #08080d;
     }
-
 
     .profile-pic {
       width: 180px;
@@ -183,11 +162,6 @@
       transform: translateY(-3px);
     }
 
-
-    /* ==============================
-       ABOUT
-    ============================== */
-
     .about {
       max-width: 850px;
       margin: auto;
@@ -197,11 +171,6 @@
       color: #aaa;
       font-size: 18px;
     }
-
-
-    /* ==============================
-       SKILLS
-    ============================== */
 
     .skills {
       display: grid;
@@ -245,7 +214,6 @@
       color: #858592;
       font-size: 14px;
     }
-
 
     /* ==============================
        PROJECTS
@@ -291,11 +259,6 @@
     .project p {
       color: #888895;
     }
-
-
-    /* ==============================
-       BEYOND THE CODE
-    ============================== */
 
     .beyond {
       background:
@@ -358,11 +321,6 @@
       font-size: 15px;
     }
 
-
-    /* ==============================
-       CONTACT
-    ============================== */
-
     .contact {
       text-align: center;
     }
@@ -393,11 +351,6 @@
       border-color: #765bc0;
     }
 
-
-    /* ==============================
-       FOOTER
-    ============================== */
-
     footer {
       text-align: center;
 
@@ -410,11 +363,6 @@
       font-size: 14px;
     }
 
-
-    /* ==============================
-       MOBILE RESPONSIVE
-    ============================== */
-
     @media (max-width: 1050px) {
 
       .skills {
@@ -422,7 +370,6 @@
       }
 
     }
-
 
     @media (max-width: 800px) {
 
@@ -452,7 +399,6 @@
       }
 
     }
-
 
     @media (max-width: 500px) {
 
@@ -520,7 +466,6 @@
   </nav>
 
 
-
   <!-- ==============================
        HOME
   ============================== -->
@@ -535,23 +480,19 @@
         class="profile-pic"
       >
 
-
       <h1>
         SAWOM
       </h1>
 
-
       <h2>
         Coder • Designer • Freelancer • Guitarist • Ethical Hacker
       </h2>
-
 
       <p>
         I create digital experiences, design creative visuals,
         build ideas into projects, explore cybersecurity,
         and enjoy making music along the way.
       </p>
-
 
       <div class="buttons">
 
@@ -568,7 +509,6 @@
     </div>
 
   </section>
-
 
 
   <!-- ==============================
@@ -589,7 +529,6 @@
 
     </div>
 
-
     <div class="about">
 
       <p>
@@ -604,9 +543,7 @@
 
       </p>
 
-
       <br>
-
 
       <p>
 
@@ -618,7 +555,6 @@
     </div>
 
   </section>
-
 
 
   <!-- ==============================
@@ -639,9 +575,7 @@
 
     </div>
 
-
     <div class="skills">
-
 
       <div class="card">
 
@@ -659,7 +593,6 @@
         </p>
 
       </div>
-
 
 
       <div class="card">
@@ -680,7 +613,6 @@
       </div>
 
 
-
       <div class="card">
 
         <div class="icon">
@@ -697,7 +629,6 @@
         </p>
 
       </div>
-
 
 
       <div class="card">
@@ -718,7 +649,6 @@
       </div>
 
 
-
       <div class="card">
 
         <div class="icon">
@@ -736,15 +666,14 @@
 
       </div>
 
-
     </div>
 
   </section>
 
 
-
   <!-- ==============================
        PROJECTS
+       ADD NEW PROJECTS IN projectsData
   ============================== -->
 
   <section id="projects">
@@ -761,70 +690,9 @@
 
     </div>
 
-
-    <div class="projects">
-
-
-      <div class="project">
-
-        <span>
-          WEB PROJECT
-        </span>
-
-        <h3>
-          Volunteer Rating System
-        </h3>
-
-        <p>
-          A web-based volunteer rating platform created
-          for event management and evaluation.
-        </p>
-
-      </div>
-
-
-
-      <div class="project">
-
-        <span>
-          ICT EVENT
-        </span>
-
-        <h3>
-          BBCC ICT Fest 2026
-        </h3>
-
-        <p>
-          Creative and technical work for a student-focused
-          ICT event featuring competitions and activities.
-        </p>
-
-      </div>
-
-
-
-      <div class="project">
-
-        <span>
-          DESIGN
-        </span>
-
-        <h3>
-          Graphic Design
-        </h3>
-
-        <p>
-          Logos, posters, branding concepts and other
-          creative visual projects.
-        </p>
-
-      </div>
-
-
-    </div>
+    <div class="projects" id="project-list"></div>
 
   </section>
-
 
 
   <!-- ==============================
@@ -844,7 +712,6 @@
       </p>
 
     </div>
-
 
     <div class="beyond-container">
 
@@ -875,7 +742,6 @@
       </div>
 
 
-
       <!-- ETHICAL HACKER -->
 
       <div class="beyond-card">
@@ -900,7 +766,6 @@
         </p>
 
       </div>
-
 
 
       <!-- DESIGNER -->
@@ -928,7 +793,6 @@
       </div>
 
 
-
       <!-- FREELANCER -->
 
       <div class="beyond-card">
@@ -952,7 +816,6 @@
         </p>
 
       </div>
-
 
 
       <!-- GUITARIST -->
@@ -979,11 +842,9 @@
 
       </div>
 
-
     </div>
 
   </section>
-
 
 
   <!-- ==============================
@@ -1004,19 +865,15 @@
 
     </div>
 
-
     <div class="socials">
-
 
       <a href="mailto:raiyansarowar.bb@gmail.com">
         📧 Email
       </a>
 
-
       <a href="tel:+8801749706688">
         📞 01749706688
       </a>
-
 
       <a
         href="https://www.instagram.com/rai_yan102/"
@@ -1025,14 +882,12 @@
         📸 Instagram
       </a>
 
-
       <a
         href="https://www.facebook.com/share/1BsvvA7hkW/?mibextid=wwXIfr"
         target="_blank"
       >
         🔵 Facebook
       </a>
-
 
       <a
         href="https://github.com/rssawom"
@@ -1041,11 +896,9 @@
         💻 GitHub
       </a>
 
-
     </div>
 
   </section>
-
 
 
   <!-- ==============================
@@ -1059,6 +912,91 @@
   </footer>
 
 
+  <!-- ==============================
+       PROJECT DATA
+       ADD NEW PROJECTS HERE
+  ============================== -->
+
+  <script>
+
+    const projectsData = [
+
+      {
+        category: "WEB PROJECT",
+        title: "Volunteer Rating System",
+        description:
+          "A web-based volunteer rating platform created for event management and evaluation."
+      },
+
+      {
+        category: "ICT EVENT",
+        title: "BBCC ICT Fest 2026",
+        description:
+          "Creative and technical work for a student-focused ICT event featuring competitions and activities."
+      },
+
+      {
+        category: "DESIGN",
+        title: "Graphic Design",
+        description:
+          "Logos, posters, branding concepts and other creative visual projects."
+      },
+
+      {
+        category: "LOGO DESIGN",
+        title: "G&C Company Logo",
+        description:
+          "A professional logo design created for G&C Company, focusing on a clean, modern and distinctive brand identity."
+      },
+
+      {
+        category: "BRANDING",
+        title: "Engineering Company Business Card",
+        description:
+          "A professional business card designed for an engineering company with a clean, modern and corporate visual identity."
+      },
+
+      {
+        category: "FOOD & BRANDING",
+        title: "Food Cart Design",
+        description:
+          "A creative food cart design featuring an eye-catching visual identity and an engaging layout for a food business."
+      }
+
+    ];
+
+
+    const projectList = document.getElementById("project-list");
+
+
+    projectsData.forEach(project => {
+
+      const projectCard = document.createElement("div");
+
+      projectCard.className = "project";
+
+      projectCard.innerHTML = `
+
+        <span>
+          ${project.category}
+        </span>
+
+        <h3>
+          ${project.title}
+        </h3>
+
+        <p>
+          ${project.description}
+        </p>
+
+      `;
+
+      projectList.appendChild(projectCard);
+
+    });
+
+  </script>
+
+
 </body>
 </html>
-```
